@@ -357,7 +357,7 @@ const Hero: React.FC = () => {
                     text="Coming Soon" 
                     position={[0, -1.2, 0]} 
                     color="#F8F9FA"
-                    fontSize={0.15}
+                    fontSize={0.35}
                     isSubtext
                     typing={true}
                     typingSpeed={150}

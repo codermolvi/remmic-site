@@ -86,7 +86,8 @@ module.exports = {
         'gretta': ['Gretta', 'Great Vibes', 'cursive'],
         'luxury': ['Cormorant Garamond', 'Playfair Display', 'Georgia', 'serif'],
         'dm-serif': ['DM Serif Display', 'Georgia', 'serif'],
-        'archivo-black': ['Archivo Black', 'Arial Black', 'sans-serif']
+        'archivo-black': ['Archivo Black', 'Arial Black', 'sans-serif'],
+        'comic-neue': ['Comic Neue', 'Comic Sans MS', 'cursive']
       },
       animation: {
         'flip': 'flip 0.6s cubic-bezier(0.4, 0, 0.2, 1)',

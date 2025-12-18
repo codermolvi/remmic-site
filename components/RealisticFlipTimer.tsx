@@ -431,8 +431,8 @@ const RealisticFlipTimer: React.FC = () => {
   return (
     <div className="flip-timer-wrapper">
       <div className="countdown-header">
-        <h2 className="countdown-title">Countdown Started</h2>
-        <p className="countdown-subtitle text-gradient-white opacity-90 font-archivo-black">Launch in</p>
+        <h2 className="countdown-title font-comic-neue">Launching Soon</h2>
+        
       </div>
       
       <div 

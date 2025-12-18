@@ -10,7 +10,7 @@ export default function Document() {
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet" />
       </Head>
       <body>
         <Main />

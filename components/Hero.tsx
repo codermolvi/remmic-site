@@ -222,7 +222,7 @@ const Hero: React.FC = () => {
   }, [])
 
   useEffect(() => {
-    const text = "Coming Soon"
+    const text = ""
     let index = 0
     setTypedText('')
     const timer = setInterval(() => {
@@ -384,9 +384,8 @@ const Hero: React.FC = () => {
                     : '0 4px 6px rgba(4, 16, 4, 0.2)',
                 }}
               >
-                <span className="block leading-tight text-gradient-white text-3xl md:text-7xl lg:text-8xl font-dm-serif tracking-wider">Premium</span>
-                <span className="block leading-tight text-gradient-white text-3xl md:text-7xl lg:text-8xl font-dm-serif tracking-wider">Real Estate</span>
-                <span className="block mt-2 md:mt-4 lg:mt-6 text-gradient-gold text-2xl md:text-4xl lg:text-5xl leading-tight font-dm-serif tracking-wider">Reimagined for Tomorrow</span>
+                <span className="block leading-tight text-gradient-white text-3xl md:text-7xl lg:text-8xl font-dm-serif tracking-wider">Built for the Next Era</span>
+                <span className="block leading-tight text-gradient-white text-3xl md:text-7xl lg:text-8xl font-dm-serif tracking-wider">of <span className="text-gradient-gold">Assets Value</span></span>
               </motion.h1>
 
               <motion.p

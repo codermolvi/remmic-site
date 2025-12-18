@@ -12,17 +12,17 @@ const Header: React.FC = () => {
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-premium-charcoal/30 border-b border-premium-gold/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center h-20 sm:h-24 py-2">
+        <div className="flex items-center justify-center h-28 sm:h-32 py-2">
           {/* Logo and Brand Name */}
           <div 
             className="flex items-center"
           >
-            <div className="relative w-48 h-48 sm:w-72 sm:h-72 flex items-center justify-center">
+            <div className="relative w-64 h-64 sm:w-96 sm:h-96 flex items-center justify-center">
               <img
-                src="/REMMIC LOGO SVG (1).svg"
+                src="/REMMIC LOGO SVG.svg"
                 alt="Remmic Logo"
-                width="192"
-                height="192"
+                width="256"
+                height="256"
                 className="object-contain"
                 style={{ 
                   maxWidth: '100%',
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                 }}
                 onError={(e) => {
                   const target = e.currentTarget as HTMLImageElement;
-                  target.src = '/REMMIC LOGO SVG (1).svg';
+                  target.src = '/REMMIC LOGO SVG.svg';
                 }}
                 loading="eager"
               />

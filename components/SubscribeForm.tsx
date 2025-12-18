@@ -63,7 +63,7 @@ const SubscribeForm: React.FC = () => {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.8, duration: 0.8 }}
-      className="w-full max-w-md mx-auto mt-8 px-4"
+      className="w-full max-w-md mx-auto mt-16 px-4"
     >
       <h3 className="text-gradient-gold text-center text-lg md:text-xl mb-6 font-display tracking-wider">
         BE THE FIRST TO KNOW

@@ -146,7 +146,7 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="w-full max-w-6xl mx-auto mb-2 sm:mb-4"
+            className="w-full max-w-6xl mx-auto mb-2 sm:mb-4 flex justify-center"
           >
             <RealisticFlipTimer />
           </motion.div>

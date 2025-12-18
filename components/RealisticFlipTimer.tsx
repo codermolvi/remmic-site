@@ -174,7 +174,7 @@ const FlipDigit: React.FC<FlipUnitProps> = ({ current, previous }) => {
             inset 0 -1px 1px rgba(0, 0, 0, 0.8),
             0 1px 3px rgba(212, 175, 55, 0.2);
           border-radius: 4px 4px 0 0;
-          border-bottom: 1px solid #000000;
+          border-bottom: 2px solid #000000;
           transform-origin: 50% 100%;
           z-index: 2;
         }
@@ -266,7 +266,8 @@ const FlipDigit: React.FC<FlipUnitProps> = ({ current, previous }) => {
           top: 50%;
           left: 0;
           right: 0;
-          height: 0;
+          height: 0.1px;
+          background: #000000;
           transform: translateY(-50%);
           z-index: 10;
         }
@@ -368,7 +369,34 @@ const RealisticFlipTimer: React.FC = () => {
   })
   
   const [scrollScale, setScrollScale] = useState(1)
+
+  const [typedText, setTypedText] = useState("")
+  const [showCursor, setShowCursor] = useState(true)
   const targetDate = useRef<Date | null>(null)
+
+  useEffect(() => {
+    const text = "Launching Soon"
+    let index = 0
+    setTypedText("")
+    
+    const typing = setInterval(() => {
+      setTypedText(text.substring(0, index + 1))
+      index++
+      if (index >= text.length) {
+        clearInterval(typing)
+      }
+    }, 150)
+    
+    return () => clearInterval(typing)
+  }, [])
+
+  useEffect(() => {
+    const cursor = setInterval(() => {
+      setShowCursor(prev => !prev)
+    }, 530)
+    
+    return () => clearInterval(cursor)
+  }, [])
 
   useEffect(() => {
     if (!targetDate.current) {
@@ -431,7 +459,7 @@ const RealisticFlipTimer: React.FC = () => {
   return (
     <div className="flip-timer-wrapper">
       <div className="countdown-header">
-        <h2 className="countdown-title font-comic-neue">Launching Soon</h2>
+        <h2 className="countdown-title font-comic-neue">{typedText}</h2>
         
       </div>
       
@@ -522,6 +550,18 @@ const RealisticFlipTimer: React.FC = () => {
         }
 
         .countdown-title {
+
+        .typing-cursor {
+          opacity: 0;
+          color: #C9A74D;
+          font-weight: 400;
+          margin-left: 2px;
+          transition: opacity 0.1s ease;
+        }
+
+        .typing-cursor.visible {
+          opacity: 1;
+        }
           font-size: clamp(20px, 4vw, 32px);
           font-weight: 700;
           background: linear-gradient(135deg, #D4AF37, #FFD700, #D4AF37);

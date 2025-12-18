@@ -384,8 +384,8 @@ const Hero: React.FC = () => {
                     : '0 4px 6px rgba(4, 16, 4, 0.2)',
                 }}
               >
-                <span className="block leading-tight text-gradient-white text-6xl md:text-7xl lg:text-8xl font-luxury">Premium Real Estate</span>
-                <span className="block mt-6 md:mt-8 lg:mt-10 text-gradient-gold text-3xl md:text-4xl lg:text-5xl leading-tight font-gretta">Reimagined for Tomorrow</span>
+                <span className="block leading-tight text-gradient-white text-6xl md:text-7xl lg:text-8xl font-display">Premium Real Estate</span>
+                <span className="block mt-6 md:mt-8 lg:mt-10 text-gradient-gold text-3xl md:text-4xl lg:text-5xl leading-tight font-display">Reimagined for Tomorrow</span>
               </motion.h1>
 
               <motion.p
@@ -395,7 +395,7 @@ const Hero: React.FC = () => {
                   z: isHovered ? 10 : 0
                 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
-                className="font-serif text-lg md:text-xl lg:text-2xl text-gradient-gold max-w-2xl mx-auto leading-relaxed mb-0 px-2 md:px-4 font-medium transform-gpu"
+                className="font-display text-lg md:text-xl lg:text-2xl text-gradient-gold max-w-2xl mx-auto leading-relaxed mb-0 px-2 md:px-4 font-medium transform-gpu"
                 style={{
                   transformStyle: 'preserve-3d',
                   textShadow: isHovered 

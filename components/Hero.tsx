@@ -385,7 +385,7 @@ const Hero: React.FC = () => {
                 }}
               >
                 <span className="block leading-tight text-gradient-white text-6xl md:text-7xl lg:text-8xl font-display tracking-wider">Premium Real Estate</span>
-                <span className="block mt-6 md:mt-8 lg:mt-10 text-gradient-gold text-3xl md:text-4xl lg:text-5xl leading-tight font-display tracking-wider">Reimagined for Tomorrow</span>
+                <span className="block mt-8 md:mt-16 lg:mt-20 text-gradient-gold text-3xl md:text-4xl lg:text-5xl leading-tight font-display tracking-wider">Reimagined for Tomorrow</span>
               </motion.h1>
 
               <motion.p

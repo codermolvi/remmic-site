@@ -29,7 +29,8 @@ const ThreeDHeroText: React.FC<ThreeDHeroTextProps> = ({
   const [displayedText, setDisplayedText] = useState(typing ? '' : text)
   
   const { viewport } = useThree()
-  const responsiveFontSize = Math.max(Math.min(fontSize * (viewport.width / 6), fontSize * 3), fontSize * 1.5)
+  const maxScale = text.includes("Coming Soon") ? 1.5 : 3;
+  const responsiveFontSize = Math.max(Math.min(fontSize * (viewport.width / 6), fontSize * maxScale), fontSize * 1.2)
 
   useEffect(() => {
     if (typing) {

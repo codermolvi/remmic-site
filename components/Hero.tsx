@@ -352,7 +352,7 @@ const Hero: React.FC = () => {
                   <ambientLight intensity={isHovered ? 0.7 : 0.5} />
                   <pointLight position={[10, 10, 10]} intensity={isHovered ? 1.2 : 1} />
                   <ThreeDHeroText text="Premium Real Estate" position={[0, 1.0, 0]} color="#F8F9FA" fontSize={0.5} />
-                  <ThreeDHeroText text="Reimagined for Tomorrow" position={[0, -0.8, 0]} color="#D4AF37" fontSize={0.28} isSubtext />
+                  <ThreeDHeroText text="Reimagined for Tomorrow" position={[0, -0.4, 0]} color="#D4AF37" fontSize={0.28} isSubtext />
                   <ThreeDHeroText 
                     text="Coming Soon" 
                     position={[0, -1.2, 0]} 
@@ -385,7 +385,7 @@ const Hero: React.FC = () => {
                 }}
               >
                 <span className="block leading-tight text-gradient-white text-6xl md:text-7xl lg:text-8xl font-display tracking-wider">Premium Real Estate</span>
-                <span className="block mt-12 md:mt-24 lg:mt-32 text-gradient-gold text-3xl md:text-4xl lg:text-5xl leading-tight font-display tracking-wider">Reimagined for Tomorrow</span>
+                <span className="block mt-8 md:mt-16 lg:mt-20 text-gradient-gold text-3xl md:text-4xl lg:text-5xl leading-tight font-display tracking-wider">Reimagined for Tomorrow</span>
               </motion.h1>
 
               <motion.p

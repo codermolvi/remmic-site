@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:title" content="REMMIC - Premium Real Estate Investment Platform" />
         <meta property="og:description" content="Experience the future of premium real estate investment. Revolutionary blockchain platform combining elite properties with cutting-edge technology." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/REMMIC ONLY LOGO.svg" />
+        <meta property="og:image" content="/REMMIC LOGO SVG (1).svg" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="REMMIC - Premium Real Estate Investment Platform" />

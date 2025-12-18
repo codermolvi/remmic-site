@@ -84,7 +84,9 @@ module.exports = {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
         'display': ['Cinzel', 'Georgia', 'serif'],
         'gretta': ['Gretta', 'Great Vibes', 'cursive'],
-        'luxury': ['Cormorant Garamond', 'Playfair Display', 'Georgia', 'serif']
+        'luxury': ['Cormorant Garamond', 'Playfair Display', 'Georgia', 'serif'],
+        'dm-serif': ['DM Serif Display', 'Georgia', 'serif'],
+        'archivo-black': ['Archivo Black', 'Arial Black', 'sans-serif']
       },
       animation: {
         'flip': 'flip 0.6s cubic-bezier(0.4, 0, 0.2, 1)',

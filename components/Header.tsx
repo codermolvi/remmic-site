@@ -17,12 +17,12 @@ const Header: React.FC = () => {
           <div 
             className="flex items-center"
           >
-            <div className="relative w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center">
+            <div className="relative w-56 h-56 sm:w-64 sm:h-64 flex items-center justify-center">
               <img
-                src="/REMMIC ONLY LOGO.svg"
+                src="/REMMIC LOGO SVG (1).svg"
                 alt="Remmic Logo"
-                width="48"
-                height="48"
+                width="224"
+                height="224"
                 className="object-contain"
                 style={{ 
                   maxWidth: '100%',
@@ -30,15 +30,11 @@ const Header: React.FC = () => {
                 }}
                 onError={(e) => {
                   const target = e.currentTarget as HTMLImageElement;
-                  target.src = '/REMMIC ONLY LOGO.svg';
+                  target.src = '/REMMIC LOGO SVG (1).svg';
                 }}
                 loading="eager"
               />
               <div className="absolute inset-0 bg-premium-gold/10 blur-2xl rounded-full" />
-            </div>
-            <div className="ml-3">
-              <h1 className="font-display text-2xl sm:text-3xl text-gradient-gold tracking-wider">REMMIC</h1>
-              <p className="text-xs sm:text-sm text-gradient-gold tracking-widest uppercase hidden sm:block opacity-70">Real Estate Blockchain</p>
             </div>
           </div>
 

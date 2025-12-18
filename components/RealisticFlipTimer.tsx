@@ -73,7 +73,7 @@ const FlipDigit: React.FC<FlipUnitProps> = ({ current, previous }) => {
           margin: 0 1px;
           font-size: clamp(24px, 6vw, 54px);
           font-weight: bold;
-          font-family: 'Courier New', monospace;
+          font-family: 'Archivo Black', 'Arial Black', sans-serif;
           transform-style: preserve-3d;
           transform: translateZ(10px);
         }
@@ -432,7 +432,7 @@ const RealisticFlipTimer: React.FC = () => {
     <div className="flip-timer-wrapper">
       <div className="countdown-header">
         <h2 className="countdown-title">Countdown Started</h2>
-        <p className="countdown-subtitle text-gradient-white opacity-90">Launch in</p>
+        <p className="countdown-subtitle text-gradient-white opacity-90 font-archivo-black">Launch in</p>
       </div>
       
       <div 

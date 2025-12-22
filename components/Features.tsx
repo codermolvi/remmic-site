@@ -43,8 +43,7 @@ const Features: React.FC = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="font-display text-3xl md:text-4xl lg:text-5xl text-white mb-6"
           >
-            Experience the Future of
-            <span className="block text-premium-gold mt-2">Premium Real Estate Investment</span>
+Experience the Future
           </motion.h2>
           
           <motion.p

@@ -270,7 +270,7 @@ const Hero: React.FC = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      className="relative text-center mb-0 px-2 mt-20 sm:mt-24 md:mt-28 overflow-hidden"
+      className="relative text-center mb-0 px-2 mt-32 sm:mt-36 md:mt-40 overflow-hidden"
       style={{
         perspective: 2000,
         transformStyle: 'preserve-3d',
@@ -351,7 +351,6 @@ const Hero: React.FC = () => {
                 >
                   <ambientLight intensity={isHovered ? 0.7 : 0.5} />
                   <pointLight position={[10, 10, 10]} intensity={isHovered ? 1.2 : 1} />
-                  <ThreeDHeroText text="Premium Real Estate" position={[0, 1.0, 0]} color="#F8F9FA" fontSize={0.5} />
                   <ThreeDHeroText text="Reimagined for Tomorrow" position={[0, -0.4, 0]} color="#D4AF37" fontSize={0.28} isSubtext />
                   <ThreeDHeroText 
                     text="Coming Soon" 

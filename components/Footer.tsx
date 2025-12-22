@@ -27,10 +27,17 @@ const Footer: React.FC = () => {
               transition={{ delay: 1.2, duration: 0.6 }}
               className="text-center md:text-left"
             >
-              <h3 className="font-display text-2xl text-gradient-gold mb-2">REMMIC</h3>
-              <p className="text-gradient-white text-sm opacity-80">
-                Revolutionizing Real Estate Investment
-              </p>
+              <img
+                src="/REMMIC LOGO SVG.svg"
+                alt="Remmic Logo"
+                width="180"
+                height="90"
+                className="object-contain"
+                style={{ 
+                  maxWidth: '100%',
+                  height: 'auto'
+                }}
+              />
             </motion.div>
 
             <motion.div

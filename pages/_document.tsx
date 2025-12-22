@@ -6,7 +6,15 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/REMMIC LOGO SVG (1).svg" />
         <link rel="shortcut icon" href="/REMMIC LOGO SVG (1).svg" />
-        <meta name="description" content="REMMIC - Premium Real Estate Investment Platform" />
+        <meta name="description" content="REMMIC - Premium Digital Platform Coming Soon" />
+        <meta name="keywords" content="REMMIC, digital platform, innovation, technology, coming soon" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="REMMIC - Premium Digital Platform" />
+        <meta property="og:description" content="Experience the future of digital innovation. Revolutionary platform launching soon." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="REMMIC - Premium Digital Platform" />
+        <meta name="twitter:description" content="Experience the future of digital innovation. Revolutionary platform launching soon." />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

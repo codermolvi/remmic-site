@@ -400,16 +400,26 @@ const RealisticFlipTimer: React.FC = () => {
 
   useEffect(() => {
     if (!targetDate.current) {
-      // Check if we have a stored start date, if not use December 10, 2025
-      const storedStartDate = localStorage.getItem('countdownStartDate')
+      // Version check to force reset for 15-day countdown
+      const countdownVersion = localStorage.getItem('countdownVersion')
+      const currentVersion = '15days-v1'
+      
       let startDate: Date
       
-      if (storedStartDate) {
-        startDate = new Date(storedStartDate)
+      if (countdownVersion === currentVersion) {
+        // Use existing start date if version matches
+        const storedStartDate = localStorage.getItem('countdownStartDate')
+        if (storedStartDate) {
+          startDate = new Date(storedStartDate)
+        } else {
+          startDate = new Date()
+          localStorage.setItem('countdownStartDate', startDate.toISOString())
+        }
       } else {
-        // First time: Set start date to today
+        // Reset countdown with new version
         startDate = new Date()
         localStorage.setItem('countdownStartDate', startDate.toISOString())
+        localStorage.setItem('countdownVersion', currentVersion)
       }
       
       // Target date: 15 days from start date

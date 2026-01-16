@@ -407,13 +407,13 @@ const RealisticFlipTimer: React.FC = () => {
       if (storedStartDate) {
         startDate = new Date(storedStartDate)
       } else {
-        // First time: Set start date to December 10, 2025 at 12:00 AM
-        startDate = new Date('2025-12-10T00:00:00')
+        // First time: Set start date to today
+        startDate = new Date()
         localStorage.setItem('countdownStartDate', startDate.toISOString())
       }
       
-      // Target date: 30 days from start date
-      targetDate.current = new Date(startDate.getTime() + (30 * 24 * 60 * 60 * 1000))
+      // Target date: 15 days from start date
+      targetDate.current = new Date(startDate.getTime() + (15 * 24 * 60 * 60 * 1000))
     }
 
     const updateTimer = () => {
